@@ -61,26 +61,36 @@
         </div>
 
         <div class="form-control">
+            <label for="email">E-mail</label>
+            <input class="control" type="email" name="email" minlength="3" id="email" required/>
+        </div>
+
+        <div class="form-control">
+            <label for="adress">Domicilio</label>
+            <input class="control" type="text" name="adress" minlength="3" id="adress" required/>
+        </div>
+
+        <div class="form-control">
             <label for="date">Fecha de nacimiento</label>
             <input class="control" type="date" name="date" id="date" required/>
         </div>
 
         <div class="form-control">
             <label>Tipo de perfil</label>
-            <select class="control" name="profile-type" >
-                <option value="Comprar">Comprar</option>
-                <option value="Venta">Venta</option>
-            </select>
+            <label class="control" name="profile-type" >
+                <input type="checkbox" name="hobbies" value="comprar">Comprar
+                <input type="checkbox" name="hobbies" value="venta">Venta
+            </label>
         </div>
 
         <div class="form-control">
             <label>Categorías de interés: </label>
             <label class="control">
-                <input type="checkbox" name="hobbies" value="Electro">Electro
-                <input type="checkbox" name="hobbies" value="Fashion">Moda
-                <input type="checkbox" name="hobbies" value="Home">Hogar
-                <input type="checkbox" name="hobbies" value="toy-store">Juguetería
-                <input type="checkbox" name="hobbies" value="healthy-life">Vida sana
+                <div><input type="checkbox" name="categoria" value="Electro">Electro</div>
+                <div><input type="checkbox" name="categoria" value="Fashion">Moda</div>
+                <div><input type="checkbox" name="categoria" value="Home">Hogar</div>
+                <div><input type="checkbox" name="categoria" value="toy-store">Juguetería</div>
+                <div><input type="checkbox" name="categoria" value="healthy-life">Vida sana</div>
             </label>
         </div>
 

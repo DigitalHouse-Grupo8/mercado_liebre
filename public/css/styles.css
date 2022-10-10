@@ -1,5 +1,21 @@
-* {
+*{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+}
+
+.article_image_truck{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
 }
 
 body{
@@ -10,9 +26,11 @@ body{
 
 .descriptions{
     font-size: 16px;
+    padding: 10px 0;
 }
 
 .body_header{
+    font-weight: 900;
     background-color: #EAC926;
     padding: 25px;
 }
@@ -43,15 +61,19 @@ body{
     display: flex;
     margin: 8px 24px;
 }
+.image_header{
+    display: flex;
+    flex-direction: column;
+}
+
+
 .search input {
     width: 180px;
 }
 .imagen_logo{
     display: flex;
-    /*justify-content: flex-start;*/
     height: 80px;
-    width: 160px;
-    /*margin-top: 20px;*/
+    width: 50%;
 }
 
 .burger-menu{
@@ -73,26 +95,30 @@ body{
 
 .buy_installments{
     display: flex;
-    /*justify-content: flex-start;*/
     justify-content: space-around;
     margin: 20px 0;
     text-align: right;
-    /*align-items: center;*/
     max-width: 175px;
+    align-self: flex-end;
 }
 
 /*Main*/
 main{
     display: flex;
     flex-direction: column;
-    padding: 0 10%;
-    background-color: #dcd9d9;
+    padding: 0 3%;
+    background-color: #eaeaea;
 }
 main section {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 40px;
+}
+
+.headlines{
+    margin: 20px    ;
+    font-weight: 900;
 }
 .price-discount{
     display: flex;
@@ -107,23 +133,29 @@ main section {
 .discount{
     color: green;
     font-size: 16px;
+    text-align: end;
     width: 70%;
 }
-
 article{
+    display: flex;
     background-color: white;
 }
-.article_product{
+.article_product_img{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+.article_product_detail{
+    border-top: solid #dcd9d9;
+    position: relative;
     padding: 6%;
 }
 .article_image_truck{
     color: #29af29;
 }
-
-.article_product_img{
-    width:100%
+.article_product{
+    box-shadow: 0 0 5px 2px #9d9898;
 }
-
 /*Footer*/
 footer{
     text-align: center;
@@ -164,6 +196,12 @@ footer div i{
     }
 }
 
+@media (max-width: 247px) {
+    .article_product_img{
+        width:100%
+    }
+}
+
 @media (min-width: 1200px) {
     .imagen_logo{
         width: 235px;
@@ -178,7 +216,6 @@ footer div i{
     }
 
     .section-footer, main {
-        max-width: 1700px;
         margin: auto;
     }
 

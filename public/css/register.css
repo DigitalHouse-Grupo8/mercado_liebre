@@ -3,6 +3,7 @@
 }
 .container-form{
     background-color: #eaeaea;
+    padding: 10px 10px;
 }
 
 .form-control label{
@@ -37,6 +38,6 @@
 
 @media (min-width: 768px) {
     .container-form{
-        padding: 50px 320px;
+        padding: 4% 25%;
     }
 }

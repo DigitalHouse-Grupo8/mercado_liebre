@@ -1,6 +1,9 @@
 .form-control{
     margin-bottom: 15px;
 }
+.container-form{
+    background-color: #eaeaea;
+}
 
 .form-control label{
     margin-bottom: 5px;
@@ -9,4 +12,31 @@
 }
 .form{
     margin: 20px;
+}
+.control{
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+.form-button{
+    background-color: #0052bb;
+    border: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.buttons{
+    display: flex;
+    justify-content:space-between;
+}
+.buttons button {
+    width: 48%;
+}
+
+@media (min-width: 768px) {
+    .container-form{
+        padding: 50px 320px;
+    }
 }

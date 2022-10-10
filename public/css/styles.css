@@ -73,7 +73,7 @@ body{
 .imagen_logo{
     display: flex;
     height: 80px;
-    width: 50%;
+    /*width: 50%;*/
 }
 
 .burger-menu{

@@ -12,6 +12,10 @@ const port = process.env.PORT || 3001;
     res.sendFile(path.resolve(__dirname, './views/register.html'))
   })
 
+  app.get('/login', (req, res) => {
+    res.sendFile(path.resolve(__dirname, './views/login.html'))
+  })
+
   app.use(express.static('public'))
 
 app.listen(port,()=>{

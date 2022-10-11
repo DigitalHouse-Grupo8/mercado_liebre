@@ -202,7 +202,7 @@ footer div i{
 
 @media (min-width: 247px) {
     .article_product_img{
-        width:100%
+        /*width:100%*/
     }
     .imagen_logo{
         width: 200px;

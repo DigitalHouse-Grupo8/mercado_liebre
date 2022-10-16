@@ -200,7 +200,7 @@ footer div i{
     }
 }
 
-@media (min-width: 247px) {
+@media (min-width: 768px) {
     /*.article_product_img{*/
     /*    width:100%*/
     /*}*/
@@ -209,7 +209,7 @@ footer div i{
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
     .imagen_logo{
         width: 235px;
     }
